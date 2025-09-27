@@ -1,10 +1,10 @@
 #  Sartan
 
-*One Command to Rule Them All*
+*One Command to Rule Them All - Stop The Sartan!*
 
 [![npm version](https://badge.fury.io/js/sartan.svg)](https://badge.fury.io/js/sartan)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Node.js CI](https://github.com/your-username/sartan/workflows/Node.js%20CI/badge.svg)](https://github.com/your-username/sartan/actions)
+
 
 > **Sartan** is the universal package manager wrapper that brings harmony to your Node.js monorepos. Say goodbye to remembering different commands for npm, yarn, and pnpm – Sartan speaks fluent npm and translates seamlessly.
 
