@@ -1,0 +1,48 @@
+{
+  "name": "sartan",
+  "version": "0.1.0",
+  "description": "One Command to Rule Them All. A universal package manager wrapper for Node.js.",
+  "main": "dist/index.js",
+  "bin": {
+    "sartan": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/sartan.git"
+  },
+  "keywords": [
+    "npm",
+    "yarn",
+    "pnpm",
+    "bun",
+    "package manager",
+    "wrapper",
+    "monorepo",
+    "cli"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/your-username/sartan/issues"
+  },
+  "homepage": "https://github.com/your-username/sartan#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "find-up": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.12.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
