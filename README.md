@@ -58,15 +58,25 @@ sartan install  # Just works! ✨
 
 ---
 
-##  Installation
+##  Installation (from Source)
+
+Since this is not yet published to npm, you can install it directly from the source code:
 
 ```bash
-# Install globally for system-wide access
-npm install -g sartan
+# 1. Clone the repository
+git clone https://github.com/your-username/sartan.git
 
-# Or use with npx (no installation needed)
-npx sartan install lodash
+# 2. Navigate into the project directory
+cd sartan
+
+# 3. Install dependencies
+npm install
+
+# 4. Link the package to make it globally available
+npm link
 ```
+
+Now the `sartan` command is available anywhere on your system.
 
 ---
 

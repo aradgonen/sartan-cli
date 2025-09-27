@@ -9,14 +9,13 @@ function translateCommand(manager, command, args) {
     }
     switch (command) {
         case 'install':
-            // If there are packages, it's an 'add' command for yarn/pnpm/bun
             if (args.length > 0) {
-                if (manager === 'yarn' || manager === 'pnpm' || manager === 'bun') {
-                    return { finalCommand: 'add', finalArgs: args };
+                if (manager === 'npm') {
+                    return { finalCommand: 'install', finalArgs: args };
                 }
+                return { finalCommand: 'add', finalArgs: args };
             }
-            // Otherwise it's a simple 'install'
-            return { finalCommand: 'install', finalArgs: [] }; // args are not needed for a simple install
+            return { finalCommand: 'install', finalArgs: [] };
         case 'uninstall':
             if (manager === 'yarn' || manager === 'pnpm' || manager === 'bun') {
                 return { finalCommand: 'remove', finalArgs: args };

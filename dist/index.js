@@ -52,13 +52,19 @@ async function main() {
         }
     }
     const commands = ['install', 'uninstall', 'run', 'test', 'build', 'start', 'publish', 'audit', 'outdated', 'update'];
+    const commandAliases = {
+        install: 'i',
+        uninstall: 'un',
+        test: 't'
+    };
     commands.forEach(commandName => {
         program
             .command(commandName)
+            .alias(commandAliases[commandName] || '')
             .description(`Run the '${commandName}' command using the detected package manager`)
             .argument('[args...]', 'arguments for the command')
-            .action(async (args, cmd) => {
-            await runCommand(cmd.name(), args);
+            .action(async (args) => {
+            await runCommand(commandName, args);
         });
     });
     program.on('command:*', async (operands) => {
