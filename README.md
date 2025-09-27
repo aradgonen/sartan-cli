@@ -49,13 +49,6 @@ Sartan understands workspace hierarchies and executes commands from the right lo
 - Rush monorepos
 - Custom workspace setups
 
-### ⚡ **Zero Config**
-No setup required. Install and go:
-```bash
-npm install -g sartan
-sartan install  # Just works! ✨
-```
-
 ---
 
 ##  Installation (from Source)
