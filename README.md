@@ -1,4 +1,4 @@
-#  Sartan-CLI
+#  Sartan-cli
 
 *One Command to Rule Them All - Stop The Sartan!*
 
